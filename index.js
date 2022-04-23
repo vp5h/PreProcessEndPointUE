@@ -14,7 +14,6 @@ const app = express();
 
 app.get("/", (req, res) => {
   
-  getResultFromApi("hair")
   const options = {
     method: 'GET',
     url: `https://wordsapiv1.p.rapidapi.com/words/${req.query.word}/definitions`,
